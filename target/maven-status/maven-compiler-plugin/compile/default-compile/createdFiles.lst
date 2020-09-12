@@ -1,0 +1,8 @@
+com\testingSpring\controller\TestController.class
+com\testingSpring\service\TestService.class
+com\testingSpring\response\TestResponseBody.class
+com\testingSpring\TestingSpringApplication.class
+com\testingSpring\repository\StudentRepository.class
+com\testingSpring\request\TestRequestBody.class
+com\testingSpring\service\impl\TestServiceImpl.class
+com\testingSpring\model\Students.class
