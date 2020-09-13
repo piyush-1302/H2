@@ -1,6 +1,7 @@
 package com.testingSpring.service.impl;
 
 import com.testingSpring.model.Students;
+import com.testingSpring.repository.EsStudentRepository;
 import com.testingSpring.repository.StudentRepository;
 import com.testingSpring.request.TestRequestBody;
 import com.testingSpring.response.TestResponseBody;
@@ -18,6 +19,9 @@ public class TestServiceImpl implements TestService {
     @Autowired
     StudentRepository studentRepository;
 
+    @Autowired
+    EsStudentRepository esStudentRepository;
+
 
     @Override
     public TestResponseBody insert(TestRequestBody value) {
@@ -34,7 +38,8 @@ public class TestServiceImpl implements TestService {
 
         TestResponseBody testResponseBody = new TestResponseBody();
 
-        studentRepository.findByName(value);
+//        studentRepository.findByName(value);
+        esStudentRepository.findByMobile("88");
 
         return testResponseBody;
     }
